@@ -1,0 +1,44 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.button-circle{
+  border-radius: none;
+}
+
+.button-size{
+  width: 3rem;
+  height: 3rem;
+  margin: -9 -2 -12 0;
+}
+
+#block{
+  border-radius: 50%;
+}
+
+#input{
+  display: flex;
+  width: 17rem;
+  background-color: grey;
+  border-radius: 0%;
+  color: azure;
+  border: none;
+  margin-top: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  text-align: right;
+  font-size: 1.53rem;
+}
+
+#inputHistory{
+  width: 17rem;
+  background-color: grey;
+  border-radius: 0%;
+  border: none;
+  color: rgb(205, 203, 203);
+  text-align: end;
+
+}
+
+#input::placeholder{
+  color: azure;
+  text-align: right;
+}

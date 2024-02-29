@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="block" class="panel-blockCustomize panel-block">
+    <div id="container">
+      <div class="has-background-grey-dark has-text-white">
+        <div>
+          <input class="input" id="inputHistory" type="text" readonly >
+          <input class="input" id="input" type="text" placeholder="0" readonly>
+        </div>
+        <div id="keys">
+          <div class="column">
+            <button class="button-size button is-dark button-circle" onclick="Display('1')">1</button>
+            <button class="button-size button is-dark button-circle"  onclick="Display('2')">2</button>
+            <button class="button-size button is-dark button-circle"  onclick="Display('3')">3</button>
+            <button class="button-size button is-warning button-circle"  onclick="Operator('/')">÷</button>
+            <button class="button-size button is-dark button-circle"  onclick="DeleteAll()">AC</button>
+          </div>
+          <div class="column">
+            <button class="button-size button is-dark button-circle"  onclick="Display('4')">4</button>
+            <button class="button-size button is-dark button-circle"  onclick="Display('5')">5</button>
+            <button class="button-size button is-dark button-circle"  onclick="Display('6')">6</button>
+            <button class="button-size button is-warning button-circle"  onclick="Operator('*')">*</button>
+            <button class="button-size button is-dark button-circle"  onclick="DeleteLastChar()">C</button>
+          </div>
+          <div class="column">
+            <button class="button-size button is-dark button-circle"  onclick="Display('7')">7</button>
+            <button class="button-size button is-dark button-circle"  onclick="Display('8')">8</button>
+            <button class="button-size button is-dark button-circle"  onclick="Display('9')">9</button>
+            <button class="button-size button is-warning button-circle"  onclick="Operator('-')">-</button>
+            <button class="button-size button is-dark button-circle"  onclick="Convert()">+/-</button>
+          </div>
+          <div class="column">
+            <button class="button-size button is-dark button-circle"  onclick="DisplayZero('0')">0</button>
+            <button class="button-size button is-dark button-circle"  onclick="DisplayComma('.')">,</button>
+            <button class="button-size button is-dark button-circle"  onclick="Calculate()">=</button>
+            <button class="button-size button is-warning button-circle"  onclick="Operator('+')">+</button>
+            <button class="button-size button is-dark button-circle"  onclick="Power()">x²</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
